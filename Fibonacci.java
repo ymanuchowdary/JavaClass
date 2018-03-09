@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Fibonacci {
 	
-	public static void PrintFibonacci()
+	public void PrintFibonacci()
 	{
 		long n1 = 1;
 		long n2 = 1;
@@ -11,7 +11,7 @@ public class Fibonacci {
 		long n4;
 		System.out.println("Enter number: ");
 		Scanner sc = new Scanner(System.in);
-		n4 = sc.nextInt();
+		n4 = sc.nextLong();
 		System.out.print(n1+" "+n2);
 		for(int i = 1; i<=n4; i++)
 		{
@@ -28,6 +28,7 @@ public class Fibonacci {
 	public static void main(String args[])
 	{
 		Fibonacci p = new Fibonacci();
-		Fibonacci.PrintFibonacci();
+		p.PrintFibonacci();
 	}
 }
+
